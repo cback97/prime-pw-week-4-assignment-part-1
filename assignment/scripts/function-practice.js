@@ -63,14 +63,14 @@ let testArray = [0, 1, 2, 3, 4, 5, 6, 7]
 let i = 0;
 
 function getLast(array) {
-  if (testArray[testArray.length - 1] === undefined) {
+  if (array[array.length - 1] === undefined) {
     return undefined;
-  } else if (testArray[testArray.length - 1]) {
-    return testArray[testArray.length - 1]
+  } else if (array[array.length - 1]) {
+    return array[array.length - 1]
   }
 }
 //Function Test 
-console.log('Array Status:', getLast());
+console.log('Array Status:', getLast(testArray));
 
 // 7. Function to find a value in an array. Return true if the 
 //    value is found and false otherwise. Use a loop;
