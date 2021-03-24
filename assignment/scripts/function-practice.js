@@ -14,12 +14,12 @@ console.log('Test - should say "Hello World!"', hello());
 
 // 2. Function to return an personalized hello, for example 'Hello, Jo!'
 function helloName(name) {
-  let greeting = name
+  let greeting = console.log('Hello, my name is', name, '!');
   return greeting;
 }
 // Remember to call the function to test
-console.log('Hello, my name is', helloName('Jo'));
-console.log('Hello Jo, my name is', helloName('James'));
+helloName('Jo')
+helloName('James')
 
 // 3. Function to add two numbers together & return the result
 function addNumbers() {
@@ -41,9 +41,9 @@ console.log('The solution to 12^3 is', multiplyThree());
 // 5. Function that will return true if a number is positive, 
 //    or greater than zero, and false otherwise
 function isPositive(number) {
-  if (number > 0) {
+  if (number >= 0) {
     return true;
-  } else if (number <= 0) {
+  } else if (number < 0) {
     return false;
   }
 
