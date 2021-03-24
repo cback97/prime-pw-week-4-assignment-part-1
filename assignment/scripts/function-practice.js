@@ -22,13 +22,14 @@ helloName('Jo')
 helloName('James')
 
 // 3. Function to add two numbers together & return the result
-function addNumbers() {
+function addNumbers( num1 , num2 ) {
   // return firstNumber + secondNumber;
-  let answer = 7 + 3
+  let answer = num1 + num2
   return answer
 }
 //Funtion Test
-console.log('The sum of 7 + 3 is', addNumbers());
+console.log('The sum of 7 + 3 is', addNumbers(7,3));
+console.log('The sum of 9 + 8 is', addNumbers(9,8));
 
 // 4. Function to multiply three numbers & return the result
 function multiplyThree() {
