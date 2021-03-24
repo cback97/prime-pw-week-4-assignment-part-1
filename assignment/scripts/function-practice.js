@@ -22,7 +22,7 @@ helloName('Jo')
 helloName('James')
 
 // 3. Function to add two numbers together & return the result
-function addNumbers( num1 , num2 ) {
+function addNumbers( num1,num2 ) {
   // return firstNumber + secondNumber;
   let answer = num1 + num2
   return answer
@@ -32,12 +32,12 @@ console.log('The sum of 7 + 3 is', addNumbers(7,3));
 console.log('The sum of 9 + 8 is', addNumbers(9,8));
 
 // 4. Function to multiply three numbers & return the result
-function multiplyThree() {
-  let answer = 12 * 12 * 12
+function multiplyThree(num1, num2, num3) {
+  let answer = num1 * num2 * num3
   return answer;
 }
 //Function Test
-console.log('The solution to 12^3 is', multiplyThree());
+console.log('The solution to 12^3 is', multiplyThree(12,12,12));
 
 // 5. Function that will return true if a number is positive, 
 //    or greater than zero, and false otherwise
