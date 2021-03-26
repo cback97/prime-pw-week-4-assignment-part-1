@@ -119,6 +119,17 @@ sumAll(sumArray);
 //     numbers contained in an input array. If there are no positive numbers
 //     return an empty array. Note: The input array should not change.
 
+function arrPositive(array) {
+  for(i in array){
+   console.log('Positive Values:');
+   if (i<0) {
+     array.pop(-1)
+   }
+  }
+}
+let pickle = [-1, 6, 3, 4, 5]
+arrPositive(pickle)
+
 // 11. Pick a problem from Edabit(https://edabit.com/) or 
 //     CodeWars(https://www.codewars.com/). Then describe it 
 //     here in a comment, write the function, and test it.
